@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-"""Fetch an Instagram reel's video and metadata anonymously via yt-dlp (run through uvx).
+"""Fetch an Instagram reel's video and metadata via yt-dlp (run through uvx).
 
 Usage:
-    fetch_reel.py <instagram-reel-url> [out_dir]
+    fetch_reel.py <instagram-reel-url> [out_dir] [--cookies COOKIES_FILE]
+
+By default this is fully anonymous -- no login, no cookies. Instagram sometimes blocks
+anonymous requests outright (commonly from cloud/datacenter IPs, with an error like
+"Instagram sent an empty media response"), in which case pass --cookies pointing at a
+Netscape-format cookies.txt exported from a logged-in browser session. This is an explicit
+opt-in fallback, never automatic: cookies tie the fetch to a real account, which is a
+deliberate tradeoff the caller should make knowingly, not something this script decides on
+its own. Never commit a cookies file to git -- it's a live, reusable session credential.
 
 Prints a JSON summary to stdout on success:
     {
@@ -24,9 +32,10 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
+from typing import Optional
 
 
-def run_yt_dlp(url: str, out_dir: Path) -> None:
+def run_yt_dlp(url: str, out_dir: Path, cookies: Optional[str]) -> None:
     # --write-info-json + an actual download in one invocation: one Instagram fetch cycle
     # produces both the video file and a sidecar *.info.json with caption/author/likes.
     out_template = str(out_dir / "%(id)s.%(ext)s")
@@ -37,17 +46,29 @@ def run_yt_dlp(url: str, out_dir: Path) -> None:
         "--write-info-json",
         "-f", "mp4/best",
         "-o", out_template,
-        url,
     ]
+    if cookies:
+        cmd += ["--cookies", cookies]
+    cmd.append(url)
+
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
-        sys.stderr.write(
-            "yt-dlp failed to fetch the reel. Anonymous (no-login) access to Instagram is "
-            "rate-limited and can break without warning if Instagram changes its API -- this "
-            "is very likely an Instagram-side issue, not a bug in this script. Do not blindly "
-            "retry; check the error below first.\n\n"
-            f"yt-dlp stderr:\n{result.stderr}\n"
-        )
+        if cookies:
+            hint = (
+                "yt-dlp failed even with cookies supplied -- check that the cookies file is "
+                "fresh (Instagram sessions expire) and actually belongs to a logged-in "
+                "session, then check the error below."
+            )
+        else:
+            hint = (
+                "yt-dlp failed to fetch the reel anonymously. This is often Instagram "
+                "blocking anonymous requests outright (common from cloud/datacenter IPs), "
+                "not a bug in this script. Do not blindly retry -- check the error below "
+                "first. If it mentions needing to be logged in or an 'empty media response', "
+                "the fallback is to re-run this script with --cookies pointing at a "
+                "Netscape-format cookies.txt from a logged-in browser session."
+            )
+        sys.stderr.write(f"{hint}\n\nyt-dlp stderr:\n{result.stderr}\n")
         sys.exit(1)
 
 
@@ -78,18 +99,26 @@ def find_video_file(info: dict, out_dir: Path, info_json_path: Path) -> Path:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Fetch an Instagram reel anonymously via yt-dlp.")
+    parser = argparse.ArgumentParser(description="Fetch an Instagram reel via yt-dlp (anonymous by default).")
     parser.add_argument("url", help="Instagram reel URL")
     parser.add_argument(
         "out_dir", nargs="?", default=None,
         help="Directory to save the video + metadata into (default: a new temp dir)",
+    )
+    parser.add_argument(
+        "--cookies", default=None, metavar="COOKIES_FILE",
+        help=(
+            "Path to a Netscape-format cookies.txt file for authenticated access. Optional "
+            "fallback for when anonymous access fails -- never used unless explicitly passed. "
+            "Never commit this file to git; it contains a live, reusable session credential."
+        ),
     )
     args = parser.parse_args()
 
     out_dir = Path(args.out_dir) if args.out_dir else Path(tempfile.mkdtemp(prefix="reel_"))
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    run_yt_dlp(args.url, out_dir)
+    run_yt_dlp(args.url, out_dir, args.cookies)
     info_json_path = find_info_json(out_dir)
     info = json.loads(info_json_path.read_text())
     video_path = find_video_file(info, out_dir, info_json_path)
@@ -111,6 +140,7 @@ def main() -> None:
         "video_path": str(video_path),
         "info_json_path": str(info_json_path),
         "source_url": args.url,
+        "authenticated": bool(args.cookies),
     }
     print(json.dumps(summary, indent=2))
 

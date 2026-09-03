@@ -30,14 +30,31 @@ video gets deleted in step 4):
 python3 .claude/skills/reel-to-skill/scripts/fetch_reel.py "<reel-url>" /tmp/reel-to-skill/<run-id>
 ```
 
-This shells out to `uvx yt-dlp` (no install needed, no login/cookies -- fully anonymous). On
-success it prints a JSON object to stdout with `caption`, `author` (`username` +
-`display_name`), `like_count`, and `video_path`. Parse that JSON.
+This shells out to `uvx yt-dlp` (no install needed). By default it's fully anonymous -- no
+login, no cookies. On success it prints a JSON object to stdout with `caption`, `author`
+(`username` + `display_name`), `like_count`, `video_path`, and `authenticated` (whether
+cookies were used). Parse that JSON.
 
 **If it fails:** the script exits non-zero and prints yt-dlp's actual error to stderr.
 Instagram's anonymous access is rate-limited and can break without notice -- don't retry
-blindly. Show the real error to the user and stop; only retry if the error clearly indicates
-a transient network blip.
+blindly. Show the real error to the user and stop; only retry once if the error clearly
+indicates a transient network blip.
+
+**Cookies fallback:** if the error mentions needing to be logged in, or says something like
+"Instagram sent an empty media response" (a common signature of Instagram blocking anonymous
+requests outright, especially from cloud/datacenter IPs -- not specific to any one reel),
+anonymous access has hit a wall that a retry won't fix. Tell the user plainly what happened
+and ask whether they want to supply a cookies file as a fallback -- do not silently switch to
+authenticated mode on your own, since it trades away the "anonymous" property they may be
+relying on. If they provide one (a Netscape-format `cookies.txt` exported from a logged-in
+browser session), re-run with `--cookies <path>`:
+
+```bash
+python3 .claude/skills/reel-to-skill/scripts/fetch_reel.py "<reel-url>" /tmp/reel-to-skill/<run-id> --cookies /path/to/cookies.txt
+```
+
+Never commit a cookies file to this repo or copy it anywhere persistent -- it's a live,
+reusable session credential, not a config value.
 
 ### 2. Transcribe the video
 
