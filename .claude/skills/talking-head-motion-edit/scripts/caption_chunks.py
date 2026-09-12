@@ -32,12 +32,23 @@ MAX_WORDS = 3
 PUNCTUATION = (".", "!", "?", ";", ":", ",")
 
 
+def normalize_word(w):
+    text = w.get("word", w.get("text", "")).strip()
+    return {"word": text, "start": w["start"], "end": w["end"]}
+
+
 def extract_words(transcript):
-    if "words" in transcript:
-        return transcript["words"]
-    words = []
-    for segment in transcript.get("segments", []):
-        words.extend(segment.get("words", []))
+    # hyperframes `transcribe --json` emits a flat top-level list of
+    # {"text": ..., "start": ..., "end": ...} entries.
+    if isinstance(transcript, list):
+        raw = transcript
+    elif "words" in transcript:
+        raw = transcript["words"]
+    else:
+        raw = []
+        for segment in transcript.get("segments", []):
+            raw.extend(segment.get("words", []))
+    words = [normalize_word(w) for w in raw]
     if not words:
         raise ValueError(
             "No word-level timestamps found. This script needs a transcript with "
