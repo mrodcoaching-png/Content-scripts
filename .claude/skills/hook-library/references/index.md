@@ -1,0 +1,199 @@
+# Hook index
+
+Source: zerotomany hook library — https://viral.nglokchun.com/hooks (captured 2026-10-03, 193 hooks).
+
+One line per hook: **Name** — what it does `[tags]`. Full breakdown and example openers for each are in `library.md` under the same `## Name` heading.
+
+- **Absurd Alternative Challenge** — Open by questioning why the viewer would do something the normal way when they could adopt an absurd, extreme, or 'psycho' alternative instead. `[contrast, absurdity, challenge, reframe]`
+- **Acceleration Challenge** — Open by demanding the viewer make a rapid decision, then immediately launch into a fast-paced analysis that forces them to keep up or fall behind. `[urgency, decision pressure, rapid analysis]`
+- **Age Comparison Bet** — Open by betting that an object is older than the viewer, using age as a surprising comparison hook. `[age, bet, comparison, surprise]`
+- **Age Confession Open** — Open by stating your age or life stage alongside a blunt confession or identity crisis — the vulnerability of the number makes the viewer stay. `[age, confession, identity, vulnerability]`
+- **Age Gate Warning** — Open by calling out a specific age range and warning them not to do a certain action — the age gate makes the warning feel personal. `[age, warning, direct-address, prevention]`
+- **Age Rewind Playbook** — Open by placing yourself back at a younger age, then deliver the exact playbook you would run to avoid a specific bad outcome. `[age, rewind, playbook, avoidance]`
+- **Alphabet Challenge** — Open by committing to try a different item for each letter of the alphabet, creating a structured, gamified list. `[alphabet, challenge, list, gamified]`
+- **Artifact Story Opener** — Open by pointing at a physical object or image and let the story behind it carry the hook. `[visual, artifact, story, proof]`
+- **Ask And Investigate** — Open by quoting a recurring question people ask you, then turn the video into a live investigation to find the answer. `[question, investigation, live, curiosity]`
+- **Asset Triplet Stack** — Open by naming a giant entity, then reveal the three specific companies/assets it secretly depends on — each with a one-line mechanical role. `[dependency reveal, supply chain, list of three, hidden infrastructure]`
+- **Assumption Flip** — Open by stating a common belief the viewer holds as fact — then instantly flip it with what you learned. `[assumption, reframe, belief-shift]`
+- **Audience Qualifier Callout** — Open by naming a specific audience and their desired outcome, then issue a direct 'listen to this' command that filters everyone else out. `[audience, qualifier, direct-address, filter]`
+- **Audience Question Response** — Open by noting that people keep asking you a specific question, then promise to answer it. `[audience, question, response, engagement]`
+- **Authority Flip Prediction** — Open by quoting a major authority figure's public warning or denial, then flip it by revealing the hidden motive behind their statement and predicting the opposite action. `[finance, conspiracy, prediction]`
+- **Authority Leak Exploit** — Open by citing a named authority figure who just publicly revealed the hidden rules of a system — then present their disclosure as a leaked playbook the viewer can exploit before it closes. `[authority, leaked-system, hidden-rules, exploit, insider-knowledge]`
+- **Beginner Mistake List** — Open by listing things you should not do as a beginner in a specific activity, framed as recommendations against. `[beginner, mistakes, list, advice]`
+- **Behavioral Split Screen** — Open by placing two people side by side doing the same activity with opposite approaches — then let the contrast reveal the lesson. `[contrast, roleplay, comparison, dialogue]`
+- **Big Risk Declaration** — Open by naming the single biggest risk you took — the size of the bet makes the viewer need to know how it turned out. `[risk, bet, story, stakes]`
+- **Body Metric Change** — Open by promising a measurable physical change to a specific body part or performance metric within one session using simple tips. `[body, metric, tips, transformation]`
+- **Borrowed Authority** — Open on someone else's proof — a viral clip, famous name, or failure — then pivot into your lesson. `[authority, proof, reaction]`
+- **Broke Me Dissociation** — Open by attributing a current behavior to a past version of yourself that still controls you — the split between who you are now and who you were then is the hook. `[identity-split, internal-conflict, past-self]`
+- **Build It Myself** — Open by naming a problem with an existing product or situation, then declare you're building your own better version right now. `[build, problem, solution, maker]`
+- **Career Leap Announcement** — Open by announcing a dramatic career change or leap into the unknown that the viewer will follow in real time. `[career, leap, change]`
+- **Carpe Diem Guilt Flip** — Open by voicing the critic's judgment of your spending or lifestyle, agree with them — then flip it with a mortality reminder that reframes the "waste" as insurance against regret. `[mortality, justification, critic-flip]`
+- **Causal Inversion** — Open by stating a belief about cause and effect, then reveal that making the change proved the causation runs backwards. `[belief-reversal, causation, personal-proof]`
+- **Commercial Break Reveal** — Open by interrupting the video with a mock commercial for a product or service, then use the fake ad as the hook before returning to the lesson. `[skit, commercial, interruption, product]`
+- **Compounding Conditions** — Stack escalating "if you do X, then Y — and if you do X plus Z, then Y-plus" lines where each condition adds one more action to unlock a bigger outcome. `[escalation, conditional-stack, additive-framework]`
+- **Conditional Diagnosis** — Open with a conditional 'if you [problem], then [diagnostic action]' that reframes the viewer's failure as a solvable location problem. `[conditional, diagnosis, problem-solving]`
+- **Conditional Promise** — Open with a specific 'if you want X' condition, then promise the exact method or result that follows. `[conditional, promise, targeted, method]`
+- **Contrast Demo** — Show the wrong way next to the right way — the gap between them is the hook. `[contrast, demo, vs]`
+- **Coolest Thing Claim** — Open by declaring the project or item is the coolest, best, or most extreme you've ever made, daring the viewer to judge. `[superlative, claim, diy, challenge]`
+- **Cost Breakdown Transparency** — Open by announcing a completed project with its exact total cost, then promise a line-by-line breakdown of every expense. `[cost, transparency, breakdown, project]`
+- **Cost of Living Receipt** — Open by putting a price tag on a specific lifestyle or purchase — the number plus the context is the hook. `[money, receipt, lifestyle, transparency]`
+- **Cost Shock Reveal** — Open by revealing an unexpected or absurd amount of money spent on something that should be free or cheap. `[money, shock, cost]`
+- **Count The Harvest** — Open by turning the video into a live count — 'let's see how many X we can get out of this' — so the viewer stays to see the final tally. `[count, challenge, live, curiosity]`
+- **Crowd Correction Reveal** — Open by referencing a person the internet mocked or dismissed, then reveal they were right all along — the crowd's error becomes the hook. `[vindication, reversal, social-proof, surprise]`
+- **Daily Loss Quantifier** — Open by quantifying the exact amount the viewer loses per day by staying in a specific state or place. `[loss, quantify, urgency, money]`
+- **Dangerous Hypothetical** — Open by posing a vivid 'what would happen if you...' scenario that invites the viewer to imagine a risky or forbidden action, then deliver the consequence or lesson. `[hypothetical, curiosity, risk, education]`
+- **Dark Truth** — Open by revealing how the world actually works — a colder model than the comforting story people believe. `[worldview, reveal, cynicism]`
+- **Dated Anecdote Cold Open** — Open mid-scene with a specific time marker and a concrete moment, dropping the viewer into a story already in motion. `[story, timestamp, scene, immersion]`
+- **Day Count Progress** — Open by announcing the current day number in an ongoing personal challenge or project, creating a serialized progress hook. `[serial, progress, challenge, day-count]`
+- **Day in the Life Frame** — Open by framing the video as a slice of your day with a specific identity or goal — the contrast between who you are and what you're trying to change is the hook. `[day-in-life, identity, routine, goal]`
+- **Deadline Rescue Plan** — Open by naming an imminent deadline the viewer faces with no time to prepare, then immediately deliver the rescue plan. `[deadline, rescue, urgency, plan]`
+- **Did Everything Right Irony** — Open by claiming you did everything right, then let the implied failure create the hook's irony. `[irony, failure, expectation, subversion]`
+- **Did You Know Action Chain** — Open with a curiosity question, then chain a rapid list of actions the viewer can take to unlock a result. `[curiosity, chain, actions, rapid-fire]`
+- **Direct Address Correction** — Open by quoting what someone told you (or what you told yourself) — then immediately correct it with the truth you learned. `[correction, dialogue, reframe, authority-flip]`
+- **Direct Challenge** — Speak straight at the viewer — challenge a belief, excuse, or fear with a confrontational "you" line. `[direct-address, confrontation, you]`
+- **Distance Gap Reveal** — Open by stating an exact distance or time gap between you and someone or something — the precision makes the separation feel real. `[distance, relationship, precision, longing]`
+- **DIY Brand Replica** — Open by noting a brand didn't sponsor you, then offer a DIY alternative to their product. `[diy, brand, replica, savings]`
+- **Doubters Callback** — Open by quoting what people said when you started, then let the present-day result answer them — the doubt becomes the hook. `[doubt, validation, contrast, story]`
+- **Easy Way Out** — Open by naming the viewer's current state, then reveal the easiest shortcut to their dream state through one specific result. `[shortcut, state, result, ease]`
+- **Environment Flip** — Set up a positive experience in one environment, then flip it by placing the same action in a different environment where the outcome reverses. `[contrast, social-dynamics, same-action]`
+- **Escalating Gauntlet** — Promise a counted list where each item is harder than the last, turning the list into a rising-difficulty challenge. `[list, difficulty-ramp, challenge]`
+- **Essential Gear Filter** — Open by asking which items in a category are truly necessary, then cut through the noise by naming only the essentials. `[essentials, filter, gear, minimalism]`
+- **Everyday vs Scenario Split** — Open by showing the same person or thing in two states — a normal day versus a specific scenario — and let the gap between them carry the lesson. `[split-screen, contrast, scenario, behavior]`
+- **Expectation Trap** — Open by describing a relatable setup that primes the viewer to expect a specific outcome, then deliberately withhold that outcome to create curiosity. `[curiosity-gap, tension, withholding, retention]`
+- **Experience Credibility Claim** — Open by citing years of experience in a role, then express frustration that people still doubt your advice. `[credibility, experience, frustration, authority]`
+- **Experiment Challenge** — Open by describing a self-imposed experiment or challenge with a clear goal and time frame. `[experiment, challenge, goal]`
+- **Experiment Field Test** — Open by framing the video as a live test or experiment with a measurable question, then let the viewer watch the result unfold. `[experiment, test, curiosity, result]`
+- **Expert Interview Question** — Open by directly asking a named expert how they achieve a specific result, setting up an interview-style answer. `[interview, expert, question, dialogue]`
+- **Failed Pattern Becomes New Pattern** — Open with a rapid list of technical setups where the failure of one pattern creates a different named pattern — each line is a "if X fails, it becomes Y" transformation. `[technical, transformation, rapid-fire]`
+- **False Solution Reveal** — Open by admitting you thought one action would magically fix a problem, then promise the unexpected reality — the gap between expectation and outcome is the hook. `[expectation, outcome, magic-fix, reveal]`
+- **Family Bulk Buy** — Open by announcing exactly how much you spent on a bulk purchase for your family, then reveal how long it lasts. `[family, spending, bulk, duration]`
+- **Family Cast Intro** — Open by introducing yourself and the people in your life like characters in a show — the cast list itself is the hook. `[family, cast, intro, personal]`
+- **Fear Hierarchy Poll** — Open by asking the viewer to choose the scariest option from a list that escalates from everyday fears to a vivid, second-person existential dread scenario. `[fear, poll, escalation, existential, engagement]`
+- **First In Your Circle** — Open by challenging the viewer to become the first person in their circle to achieve a specific dream result — the social stakes are the hook. `[social-proof, aspiration, first, circle]`
+- **First Move After Win** — Open by announcing the moment the viewer achieves a result, then immediately stack the exact next actions they must take right away. `[milestone, checklist, urgency, next-steps]`
+- **Flop Era Retrospective** — Open by naming a past low period as a 'flop era' and let the contrast with the present carry the hook. `[retrospective, low-point, contrast, arc]`
+- **For Dummies Simplification** — Open by branding a complex topic as a 'for dummies' guide, promising an idiot-proof shortcut that removes intimidation. `[simplification, beginner, branding, accessibility]`
+- **Free Haul Reveal** — Open by announcing everything you got for free at a specific event or place, turning the haul itself into the hook. `[haul, free, event, reveal]`
+- **Game Over Prevention** — Open by promising the viewer will never lose at a specific game or scenario again for the rest of their life. `[never-lose, game, permanent, skill]`
+- **Generation Advice** — Open by identifying as a specific generation and title, then offering advice to others. `[generation, advice, identity, perspective]`
+- **Height Condition Filter** — Open by addressing a specific physical or demographic condition the viewer must meet, then deliver tailored advice only for that group. `[filter, demographic, targeted, advice]`
+- **Hidden Motive Reveal** — Name a familiar behavior the viewer has experienced — then reveal the secret psychological reason behind it. `[psychology, reframe, recognition]`
+- **Home Person Impact** — Open by pointing at a specific person in the viewer's home, then promise that one action will dramatically change their outcome. `[home, person, impact, change]`
+- **Hot Take** — Open by announcing a controversial claim — then force the viewer to stay for the justification. `[belief-flip, controversy, hot-take]`
+- **Household Inventory Hack** — Open by pointing at two ordinary things already in the viewer's house, then promise the best things you did with them. `[household, inventory, hack, practical]`
+- **How-To** — Promise a clear, usable method in the first line — a script, plan, or formula the viewer can steal. `[utility, method, promise]`
+- **Ideal Partner Qualifier** — Open by describing a desired person or outcome, then promise a method that works even under difficult conditions. `[desire, qualifier, promise, relationship]`
+- **Identity Reveal Confession** — Open by stating a personal identity or secret that reframes everything the viewer is about to see. `[identity, confession, personal]`
+- **Identity Rules Declaration** — Open by declaring your personal rules as a specific identity — the label plus the rules creates instant authority and curiosity. `[identity, rules, personal, authority]`
+- **Impossible Choice Countdown** — Open by forcing the viewer into a binary decision (up/down, buy/sell, yes/no) under a tight time limit, then immediately reveal the answer and repeat the cycle with escalating scenarios. `[decision-forcing, rapid-fire-quiz, time-pressure, binary-choice, pattern-recognition]`
+- **Impossible Time Constraint** — Open by stating an absurdly short deadline for a complex task, then immediately begin executing it in real time. `[urgency, process, challenge]`
+- **Impulsive Decision Reveal** — Open by admitting a spontaneous or reckless decision, then invite the viewer to watch the consequences play out. `[impulse, confession, consequence, personal]`
+- **Ingredient Mixing Demo** — Open by starting the action of mixing ingredients, inviting the viewer to follow along. `[demo, mixing, action, tutorial]`
+- **Inside Look** — Open by inviting the viewer to look inside a specific object, place, or system with a simple 'let's see' line. `[inside, reveal, curiosity, exploration]`
+- **Invention Problem Stack** — Open by promising a story about a specific number of inventions that were created to solve a set of distinct problems, stacking curiosity through the count. `[story, invention, problem-solving, count]`
+- **Inventory Countdown Callout** — Open by announcing a precise number of items the viewer must collect, then deliver each as a rapid, high-urgency imperative with no fluff. `[listicle, urgency, countdown, instructional]`
+- **Job Situation Relatability** — Open by asking if the viewer experiences a common situation, then reveal that situation is actually your job or expertise. `[relatable, job, question, expertise]`
+- **Journey Quest Log** — Open by framing the video as a live quest or experiment with a clear mission and destination. `[journey, quest, experiment]`
+- **Kids Homework Deadline** — Open by announcing a child's school assignment is due today, then pivot immediately into the action or lesson. `[family, deadline, pivot, relatable]`
+- **Label Gift Reframe** — Open by quoting the limiting label someone assigned you, then reveal that label was actually the strategic positioning that won. `[identity, positioning, third-party-label]`
+- **Large Number of Items** — Open by stating an absurdly large number of a specific item, then show the collection or process. `[number, collection, scale, visual]`
+- **Life Changed By X** — Open by promising the story of how one specific thing changed your life — the specificity of X makes the transformation feel earned. `[transformation, story, specific, life-change]`
+- **Life Changed This Moment** — Open by promising a specific moment that changed your life, then withhold the moment itself to create the hook. `[transformation, moment, promise, curiosity]`
+- **Life Update Diary** — Open like a personal diary entry — a day count, a weekly report, or a 'this is my life right now' status update that invites the viewer into an ongoing arc. `[diary, series, personal, ongoing]`
+- **Metric Arc Reveal** — Open by announcing a completed growth or performance feat with exact numbers, then tease the two things that made it happen. `[growth, metrics, case-study]`
+- **Metric Side-by-Side** — Open by placing two identical-looking subjects next to each other and revealing the hidden metric that separates them. `[comparison, metric, visual, curiosity]`
+- **Micro-Failure Confession** — Open on a small, specific, humiliating failure — then pivot to the lesson it taught. `[vulnerability, specificity, humility, relatability]`
+- **Minimal Ingredient Recipe** — Open by stating you only need a small amount of ingredients to make something, emphasizing simplicity. `[recipe, minimal, ingredients, simple]`
+- **Missing Out** — Open by making the viewer feel late — then offer the one thing that stops them from missing the next move. `[FOMO, urgency, regret]`
+- **Mistake Callout** — Name the viewer's error in the first line — then show the fix that makes the sting worth it. `[mistake, callout, correction]`
+- **Mundane to Macro Reveal** — Open by naming an absurdly ordinary product or company, then reveal it secretly powers a massive industry or technology—the gap between "boring" and "critical" is the hook. `[hidden-connection, surprise-reveal, scale-contrast]`
+- **Myth-Busting Question** — Open by posing a yes/no question about a common belief, then promise to reveal the truth. `[myth, question, debunk, truth]`
+- **Named Method** — Promise a result, then brand the system — a named framework the viewer can remember and steal. `[framework, branded, steps]`
+- **Negative Space List** — Open by announcing a list of things you disagree with — then deliver each item as a mini-rant that flips a common belief. `[contrarian, list, belief-flip]`
+- **Nested Dialogue Escalation** — Open by acting out a rapid back-and-forth dialogue where an unseen questioner keeps asking "but why" — each answer gets shorter and more pointed until the final line delivers the thesis. `[roleplay, dialogue, philosophical]`
+- **Never Do List** — Open by listing things you should never do, framed as a warning or advice. `[warning, list, never, advice]`
+- **Never Put List** — Open by listing things you should never put in a specific place, framed as a warning. `[warning, list, never, safety]`
+- **New Item Prep** — Open by announcing you're going to prepare a brand new item for use, emphasizing freshness. `[prep, new, action, tutorial]`
+- **No Backup Plan Stakes** — Open by admitting there is no safety net — the absence of a fallback makes the outcome feel live and stakes feel real. `[stakes, risk, urgency, vulnerability]`
+- **No-Regret List** — Open by declaring your identity and goal, then list the things you will never regret doing — the list doubles as proof and advice. `[identity, list, regret, proof]`
+- **Non-Expert Transformation** — Open by admitting you're not an expert, then show a transformation you achieved with a specific budget. `[amateur, transformation, budget, diy]`
+- **Nostalgic Hacks Recap** — Open by referencing popular hacks from a specific past year, triggering nostalgia and curiosity. `[nostalgia, hacks, year, recap]`
+- **Nostalgic Memory Callback** — Open by invoking a shared childhood or past memory that makes the viewer feel personally seen. `[nostalgia, memory, relatable]`
+- **Noun Tradeoff Mechanism** — Open by stating that one party loses something on one side so they can gain something on the other — a zero-sum tradeoff that explains the hidden game. `[tradeoff, mechanism, zero-sum, explainer]`
+- **Numbered Stack** — Promise a counted list up front — reasons, things, types — so the viewer stays to collect them all. `[list, stack, numbered]`
+- **Object Count Reveal** — Open by holding up a physical object and asking what it is — then reveal it represents a counted achievement or collection. `[object, count, reveal, show-and-tell]`
+- **Old vs. New Contrast** — Open by contrasting an obsolete method or belief with its current replacement, then reveal the mechanism behind the shift. `[contrast, evolution, outdated-vs-current]`
+- **One Realization Pivot** — Open by naming a long period of action, then pivot on a single realization that changed everything. `[realization, pivot, arc, insight]`
+- **One Rule** — Reduce everything to a single non-negotiable rule — easy to remember, hard to ignore. `[rule, maxim, principle]`
+- **One Tip Ultimatum** — Open by declaring that if you could give only one tip to a specific person, it would be this — then deliver it. `[tip, ultimatum, singular, advice]`
+- **One-Two-Three Segment Listicle** — Open by announcing a numbered list with a built-in CTA at the end, then deliver each item as a rapid, self-contained instruction with a single concrete example. `[listicle, quick-fire, actionable]`
+- **Origin Story Open** — Open by dropping the viewer into a specific past moment with a date, place, or person — the story's origin point becomes the hook. `[story, timeline, personal, nostalgia]`
+- **Pain Driven Past Action** — Open by naming a past action you took because of a specific pain, making the emotion the hook. `[pain, past, motivation, confession]`
+- **Permission Reversal** — Open by naming the exact thing the viewer has been told they cannot do — then give them explicit permission to do it anyway. `[permission, rebellion, mindset, empowerment]`
+- **Personal Experiment Reveal** — Open by stating a specific personal experiment or purchase you made, then reveal the surprising result or lesson. `[personal, experiment, story, reveal]`
+- **Personal Obsession Confession** — Open by confessing a deep personal obsession or niche interest, then invite the viewer into that world. `[obsession, niche, personal, identity]`
+- **Physical Prerequisite Checklist** — Open by calling out a physical or mental state the viewer may be in, then list the exact capabilities they must have to reach a dream result. `[checklist, prerequisites, physical, dream-result]`
+- **Prediction Stakes Timeline** — Open by naming a specific public figure and their dated prediction, then immediately pit it against current market data to create a live "who's right" tension. `[prediction, authority, market-tension, dated-claim, contrarian]`
+- **Pressure Feeling Open** — Open by naming a vague social pressure everyone talks about, then making it personal and specific. `[pressure, social, relatable, confession]`
+- **Price Tag Reality Check** — Open by anchoring a specific dollar amount or income figure, then immediately show what that number actually buys, qualifies for, or costs per month in a concrete scenario. `[money, comparison, concrete, lifestyle]`
+- **Purchase Then Next** — Open by announcing what you bought and for how much, then reveal the next step you took with it. `[purchase, price, next-step, reveal]`
+- **Quantity To Result Formula** — Open by stating the exact number of an item required to achieve a specific result, turning the count into a curiosity gap. `[quantity, result, formula, curiosity]`
+- **Questionable Tradition** — Open by admitting a recurring family or personal tradition that is objectively a bad idea — the self-aware confession is the hook. `[tradition, family, humor, confession]`
+- **Quit And Switch** — Open by pairing a quit with a start — the symmetry of stopping one thing and beginning another creates instant narrative momentum. `[quit, switch, habit, contrast]`
+- **Quit Marker Countdown** — Open by counting time since you quit something, turning the elapsed period into the hook's tension. `[quit, countdown, time, transformation]`
+- **Quiz Chain** — Open by quizzing the viewer on rapid-fire examples — each answer lands as "you've understood [concept]," then straight into the next question. `[participation, quiz, chain]`
+- **Quote Your Opponent** — Open by voicing the critic or doubter — then flip it with your real answer. `[dialogue, rebuttal, conflict]`
+- **Rating Reel** — Open by announcing you're rating a category of items — then assign each a score as the hook engine. `[rating, list, scoring, game-format, commentary]`
+- **Relatable Mirror Open** — Open by describing a hyper-specific habit or trait the viewer shares, making them feel seen before the pivot. `[relatable, mirror, identity, empathy]`
+- **Renovation Transformation Log** — Open by announcing a physical transformation or repair project, then walk the viewer through the process step by step. `[renovation, transformation, process, before-after]`
+- **Repeated Action Count** — Open by stating how many times you've done a specific action, turning the repetition into proof of obsession or experience. `[repetition, count, proof, experience]`
+- **Repetition Loop** — Repeat the same short phrase with slight variation until it becomes a hypnotic hook. `[rhythm, pattern, audio]`
+- **Restart From Zero Blueprint** — Open by imagining you lost everything and had to start over at a specific age with nothing — then lay out the exact plan you'd run. `[restart, blueprint, hypothetical, plan]`
+- **Rhetorical Deflection** — Open by quoting a common challenge or criticism, then answer it with a dismissive rhetorical question that reframes the premise as absurd. `[rhetorical question, criticism handling, reframe]`
+- **Rhetorical Reframe Loop** — Open by diagnosing a series of failed attempts with the same repeated verdict — "this means your X was weak" — then pivot to the fix in the final line. `[repetition, diagnosis, reframe, loop]`
+- **Role Identity Frame** — Open by claiming a specific identity or role — mom of #, researcher, builder — then frame the entire video as how you do that job. `[identity, role, authority, framing]`
+- **Roleplay Demo** — Act out the scene instead of explaining it — the viewer learns by watching the situation play. `[roleplay, demo, scene]`
+- **Same Metric Different Item** — Open by stating that two different items share the same metric, creating a curiosity gap about how that's possible. `[comparison, metric, curiosity-gap]`
+- **Sarcastic Overstack** — Promise something simple, then describe it as an absurdly long, ridiculous pile of requirements delivered in one breath — the gap between "easy" and the swollen list is the joke. `[satire, irony, list-inflation]`
+- **Scariest Thing Declaration** — Open by naming the scariest thing you've ever done, using fear as the hook's emotional anchor. `[fear, declaration, stakes, vulnerability]`
+- **Seasonal Timing Hook** — Open by anchoring the content to a current season, holiday, or time of year so the advice feels urgent and timely. `[seasonal, timing, urgency, relevance]`
+- **Secret Knowledge** — Open by revealing a hidden angle most people miss — then tease the names, thesis, or map they need. `[insider, reveal, overlooked]`
+- **Self-Aware Contradiction** — Open by acknowledging your own advice is objectively wrong, then double down on it anyway with an emotional justification that reframes the "bad" choice as the correct one. `[confession, anti-advice, emotional-logic]`
+- **Shared Identity Callout** — Open by naming a specific in-group the viewer belongs to, then deliver advice or a rant tailored to that shared identity. `[identity, in-group, callout, community]`
+- **Shocking Fact Reveal** — Open by asking 'Did you know' and then revealing a surprising or controversial fact about a product or practice. `[shocking, fact, reveal, controversial]`
+- **Simple Device Multi-Pain Solution** — Open by claiming a simple device can prevent multiple specific pain points, stacking value through the list. `[device, pain-points, solution, value-stack]`
+- **Single Metric Claim** — Open by stating one precise personal metric or possession, then immediately tie it to the single cause that produced it. `[metric, proof, personal, cause]`
+- **Size Cause Reveal** — Open by pointing at a specific body part or object and reveal the single hidden reason it is the size it is. `[size, cause, body, reveal]`
+- **Skill So Strong** — Open by promising to develop a skill to such an extreme level that the behavior becomes involuntary — the exaggeration is the hook. `[skill, exaggeration, mastery, training]`
+- **Socratic Trap Interrogation** — Open by voicing an opponent's position as a question, get their agreement, then escalate with follow-up questions until their own logic forces a concession — then deliver the consequence. `[debate, interrogation, logic-trap, dialogue]`
+- **Space-Saving Hack List** — Open by promising a set of hacks that solved a specific constraint (small space, tight budget), then deliver each as a quick, practical fix. `[hacks, constraint, practical, list]`
+- **Starting From Scratch Intro** — Open by introducing yourself by name and declaring you're starting something from zero, making the viewer a witness. `[intro, scratch, witness, journey]`
+- **Stat Flex** — Open on a huge number — views, money, or scale — so the claim feels undeniable. `[stat, proof, scale]`
+- **Still Doing It Flex** — Open by asking if the viewer is still stuck doing an old action, then flex that you got the result in a short time without ever doing that action. `[flex, contrast, result, challenge]`
+- **Stop / Don't** — Open with a hard command that kills a habit, excuse, or piece of bad advice. `[command, interrupt, prohibition]`
+- **Stuck Then Started** — Open by naming the pain point you were stuck at, then reveal the action you started anyway — the gap between stuck and started is the hook. `[stuck, restart, pain-point, action]`
+- **Text Message Challenge** — Open by announcing you're going to text someone a challenge or question, then show the interaction. `[text, challenge, interaction, social]`
+- **This Is My Item** — Open by pointing to a personal item and then demonstrating a random or absurd action as if you were something else. `[item, demonstration, absurd, personal]`
+- **Thought Awakening Open** — Open by confessing the exact thought that hijacked your morning — the intimacy of a private thought pulls the viewer into your head. `[thought, intimate, morning, confession]`
+- **Tiered Ladder** — Run the same item through three escalating quality tiers — bad, good, best — so the contrast sells the top rung. `[ranking, contrast, escalation]`
+- **Time Compression Flex** — Open by contrasting the long time it took you to learn something with the absurdly short time you'll teach it in — the compression itself is the hook. `[time, authority, compression, teaching]`
+- **Time Dilation Comparison** — Take one huge number and convert it into human time at a fixed rate — then escalate the same rate across magnitudinally larger numbers until the final figure becomes incomprehensible. `[scale shock, unit conversion, escalating numbers, comprehension gap]`
+- **Time Pressure Confession** — Open by stating a tight deadline you're under, turning the clock into the hook's urgency. `[deadline, urgency, confession, stakes]`
+- **Time-Boxed** — Promise the payoff inside a tight clock — seconds, minutes, or days — so urgency keeps them watching. `[urgency, countdown, time]`
+- **Title Difference Decoder** — Open by naming two or three similar-sounding titles, then decode the real difference between them. `[titles, difference, decoder, career]`
+- **Transformation Count** — Open by claiming you turned a small number of one item into a larger number of another, highlighting a multiplier effect. `[transformation, multiplier, count, efficiency]`
+- **Transformation Reveal** — Open by showing a before state and a purchased item, then promise the after state will be revealed through a transformation process. `[transformation, before-after, promise, visual]`
+- **Trend Alert** — Call out a format that's working right now — then show how to ride it before it cools off. `[trend, format, timely]`
+- **Trial Close Negotiation Demo** — Open by role-playing a high-stakes negotiation dialogue in real time — the viewer watches the back-and-forth unfold as a mini-scene, learning the script by observation. `[roleplay, negotiation, dialogue, tactical]`
+- **Unexpected Acquisition Story** — Open by revealing a purchase or deal that sounds too strange or too good to be true, then let the story explain how it happened. `[deal, purchase, surprise, story]`
+- **Unexpected Outcome Cliffhanger** — Open by teasing a dramatic or surprising outcome, then withhold the full story to pull the viewer in. `[cliffhanger, surprise, story, curiosity]`
+- **Use-For Rapid Fire** — Open by rapidly listing "use this for X" statements with no preamble, stacking utility before the viewer can scroll. `[rapid-fire, utility-stack, no-intro]`
+- **Use-For Stack** — Rapid-fire "use this for X" lines — each use stacks perceived value before they scroll away. `[utility, stack, uses]`
+- **Used To Believe** — Open on an old belief you outgrew — then flip it with what you know now. `[belief-flip, personal, before-after]`
+- **Viral Hack Credential** — Open by referencing a viral hack that got you media attention, establishing credibility. `[viral, credential, media, hack]`
+- **Vulnerability** — Open with a raw personal low point — specific, mundane details that make the struggle feel real. `[vulnerability, relatability, confession]`
+- **Warning Sign** — Open on a conditional red flag about someone else's behavior — then reveal the tell. `[warning, red-flag, if-someone]`
+- **What They Say vs What They Mean** — Open by contrasting a professional's public statement with its hidden, often cynical, true meaning. `[contrast, translation, cynical, professional]`
+- **Why Question** — Open with a sharp "why…" that creates a curiosity gap the video has to answer. `[curiosity, question, gap]`
+- **Year In Review Reveal** — Open by naming the most popular or notable item of a specific year, then reveal the story or lesson behind it. `[retrospective, ranking, year, reveal]`
+- **Zero to X** — Open on a from-zero growth arc — the proof is that you (or someone) actually did the climb. `[origin, growth, proof]`
