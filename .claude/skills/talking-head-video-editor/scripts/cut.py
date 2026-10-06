@@ -11,6 +11,9 @@ How it decides what to keep:
   * Any silence longer than --max-gap is shortened to --max-gap (split evenly
     around the cut), so the edit stays punchy but not breathless.
   * --pad keeps a little air before/after each word so consonants aren't clipped.
+  * Real pauses are also found from the audio loudness (Whisper often stretches
+    a word over the pause after it), and shortened the same way. Disable with
+    --no-audio-silence, or set the threshold with --silence-db.
   * --drop removes whole segments by id (use for retakes/flubs).
   * --drop-words removes a word range inside one segment: "<seg>:<first>-<last>"
     (0-based word indexes, inclusive). Repeatable, comma separated.
@@ -22,7 +25,9 @@ Writes:
                                  times for overlays/captions)
 """
 import argparse
+import array
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
@@ -39,6 +44,39 @@ def parse_drop_words(spec: str):
     return out
 
 
+def quiet_runs(src, min_len, silence_db=None, win=0.05):
+    """Find stretches of real silence in the audio.
+
+    Whisper often stretches a word's timestamp over the pause after it ("had......
+    all"), so word gaps alone miss many pauses. This measures loudness in 50ms
+    windows and returns (start, end, threshold) runs quieter than the threshold.
+    Default threshold: the clip's noise floor (10th percentile) + 4 dB, which
+    adapts to noisy outdoor recordings.
+    """
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", src, "-map", "0:a:0", "-ac", "1",
+                          "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
+    pcm = array.array("h")
+    pcm.frombytes(raw[: len(raw) // 2 * 2])
+    n = int(16000 * win)
+    levels = []
+    for i in range(0, len(pcm) - n, n):
+        chunk = pcm[i:i + n]
+        ms = sum(x * x for x in chunk) / n
+        levels.append(10 * math.log10(ms + 1e-9) - 90.3)  # dBFS
+    if not levels:
+        return [], None
+    thr = silence_db if silence_db is not None else sorted(levels)[len(levels) // 10] + 4
+    runs, start = [], None
+    for i, lv in enumerate(levels + [0.0]):
+        if lv < thr and start is None:
+            start = i
+        elif lv >= thr and start is not None:
+            if (i - start) * win >= min_len:
+                runs.append((start * win, i * win))
+            start = None
+    return runs, thr
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("transcript")
@@ -48,6 +86,10 @@ def main() -> None:
     p.add_argument("--max-gap", type=float, default=0.35)
     p.add_argument("--pad", type=float, default=0.08)
     p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--no-audio-silence", action="store_true",
+                   help="only use word-timestamp gaps; skip loudness-based pause detection")
+    p.add_argument("--silence-db", type=float, default=None,
+                   help="loudness (dBFS) below which audio counts as silence (default: auto)")
     a = p.parse_args()
 
     doc = json.loads(Path(a.transcript).read_text())
@@ -82,6 +124,25 @@ def main() -> None:
                 st = max(st, w["start"] - 0.02)
             ranges.append([st, en])
         prev = w
+    # Shorten real pauses hidden inside word timestamps (see quiet_runs).
+    if not a.no_audio_silence:
+        runs, thr = quiet_runs(src, a.max_gap + 0.15, a.silence_db)
+        if runs:
+            print(f"audio pauses below {thr:.1f} dBFS: " +
+                  ", ".join(f"{x:.2f}-{y:.2f}" for x, y in runs))
+        for qs, qe in runs:
+            keep_half = a.max_gap / 2
+            cs, ce = qs + keep_half, qe - keep_half  # remove the middle, keep max_gap of air
+            new = []
+            for st, en in ranges:
+                if ce <= st or cs >= en:
+                    new.append([st, en])
+                    continue
+                if cs > st:
+                    new.append([st, cs])
+                if ce < en:
+                    new.append([ce, en])
+            ranges = new
     ranges = [[round(x, 3), round(y, 3)] for x, y in ranges if y - x > 0.05]
 
     # Re-time words onto the cut timeline.
@@ -95,7 +156,13 @@ def main() -> None:
         for st, en, off in offsets:
             if st - 1e-6 <= x <= en + 1e-6:
                 return round(off + (x - st), 3)
-        return None
+        # x fell inside a removed pause: snap to the edge of the nearest kept piece.
+        best = None
+        for st, en, off in offsets:
+            for edge, mapped in ((st, off), (en, off + en - st)):
+                if best is None or abs(edge - x) < best[0]:
+                    best = (abs(edge - x), mapped)
+        return round(best[1], 3) if best and best[0] < 2.0 else None
 
     cut_segments = {}
     for w in kept:
@@ -135,7 +202,7 @@ def main() -> None:
     graph_file.write_text(graph)
     cmd = ["ffmpeg", "-y", "-v", "error", "-i", src, "-filter_complex_script", str(graph_file),
            "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "18",
-           "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
+           "-pix_fmt", "yuv420p", "-r", "30", "-g", "30", "-keyint_min", "30",  # dense keyframes: HyperFrames seeks per frame "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
            str(out / "cut.mp4")]
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:

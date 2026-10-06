@@ -45,6 +45,15 @@ Repo: https://github.com/heygen-com/hyperframes (Apache-2.0, free).
 
 Keep everything in a project folder next to the footage, e.g. `<name>-edit/`.
 
+Phone footage is often 4K HEVC with a rotation flag. Normalize it to 1080p H.264
+first: it transcodes faster, and HyperFrames' headless Chrome can't decode HEVC
+reliably. (ffmpeg applies the rotation automatically.)
+
+```bash
+ffmpeg -i raw.MOV -map 0:v:0 -map 0:a:0 -vf "scale=1080:1920,format=yuv420p" \
+  -c:v libx264 -crf 17 -c:a aac -b:a 192k raw1080.mp4   # 1920:1080 for landscape
+```
+
 ```bash
 python3 <skill>/scripts/transcribe_words.py raw.mp4 <name>-edit/
 ```
@@ -59,7 +68,11 @@ thing and decide what goes:
   off, stumbles mid-sentence. Drop a whole segment with `--drop`, or just the
   bad words with `--drop-words seg:first-last` (0-based word indexes; the
   word list is in `transcript.json`).
-- **Dead space**: handled automatically. Silences longer than `--max-gap`
+- **Dead space**: handled automatically, from word gaps *and* from audio
+  loudness. Whisper often stretches a word over the pause after it, so word
+  gaps alone miss many pauses. `cut.py` prints the pauses it found; if it's
+  clipping quiet speech, raise the bar with `--silence-db` (e.g. -38).
+  Silences longer than `--max-gap`
   (default 0.35s) are shortened. Use ~0.25 for punchy Reels/TikTok and ~0.5 for
   calmer YouTube pacing.
 
@@ -104,8 +117,15 @@ Rules of thumb that make overlays feel edited, not pasted on:
 - One idea on screen at a time; swap visuals at sentence boundaries.
 - Visualize nouns and numbers literally: a tool name gets a logo/card, a step
   gets "01 Install it", a claim like "zero edits" gets a big "0".
-- Keep overlays out of the face. For vertical video the speaker usually fills
-  the bottom half, so use the top ~45%.
+- Keep overlays out of the face. **Look at a frame first** (`frames.py raw1080.mp4 qa --every 4`):
+  if the speaker sits in the bottom half (desk setup), use the top ~45%; if the
+  face fills the top two-thirds (handheld selfie), put captions in the bottom
+  band over the torso and keep graphics to small tiles in the sky/background corners.
+- Show the first caption from frame 0 with no fade-in. Frame 0 is often the
+  thumbnail and a blank one looks broken.
+- Never show the same word twice at once. If a word gets a big emphasis
+  treatment, make it replace that caption instead of stacking on top.
+- Keep captions to one line (`white-space:nowrap`, ~76px at 1080 wide, 3 words max).
 
 Then scaffold the project with the cut as the base track:
 
