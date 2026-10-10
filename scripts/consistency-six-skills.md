@@ -4,7 +4,7 @@
 - Topic: behavioral consistency / taking action
 - Angle: consistency isn't a personality trait or a motivation problem. It's 6 learnable skills.
 - Format: talking head list, one skill per beat, with a running roadmap ("which brings us to...")
-- Length target: ~75-90s (Sam's runs about 2 min; trim skill 6 if you need it shorter)
+- Length target: ~1:45-2:00 (about 320 words, close to Sam's length). For ~60s, cut skills 4 and 6 and make it "4 skills"
 - CTA keyword: TRACKER (you need a simple consistency tracker to send. See the note at the bottom)
 
 ## What we're borrowing from Sam's reel
