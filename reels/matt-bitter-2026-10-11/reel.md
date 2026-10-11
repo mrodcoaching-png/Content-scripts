@@ -6,6 +6,13 @@
 - Fetched: 2026-10-11
 - Skill created: cognitive-loop-skit (~/.claude/skills/cognitive-loop-skit/)
 
+## What's on screen
+
+- One continuous talking-head take (19s), speaking to the camera, holding a mic, against a brick wall. No cuts.
+- Title at the top for the whole video: "How a thought can dictate your life"
+- Under it, a numbered list: 1. Thinking, 2. Repeating, 3. Collecting evidence, 4. Identifying, 5. Deciding, 6. Living
+- An underline moves to the stage that matches each spoken line (one stage per line of the transcript). No subtitles.
+
 ## Caption
 
 The cognitive loop can dictate your reality if you don't break out of it
