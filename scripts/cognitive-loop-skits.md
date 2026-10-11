@@ -14,9 +14,22 @@
 - Optional on-screen text over the cut: "5 YEARS LATER".
 - End right on the last word so the video loops back to line 1.
 
+## On-screen text plan (all three)
+
+Use four layers. Keep everything except the subtitles to a few words, because the skit should do the explaining.
+
+1. **Top text (stays up the whole video).** It tells muted scrollers what they're watching without giving away the ending. Use the "Top text" line under each skit.
+2. **Subtitles.** Show every spoken line, two or three words at a time. Most people watch muted, and the skit doesn't work if they can't read it.
+3. **Loop marker on line 4.** When the belief comes back, show its key words in the same colour as on line 1 and add a small "↻ AGAIN" beside them. This lets people see the loop, not just hear it.
+4. **Time-jump card.** Show it for about 1 second on black, or over a freeze frame, at the cut. Then say line 6 with only the subtitles on screen. Put nothing after the last word, so the replay starts straight away.
+
 ---
 
 ## 1. The Monday loop (strongest, so post this one first)
+
+**Top text:** "Why you're still 'starting Monday'" (alt: "The most expensive word in fitness: Monday")
+**Loop marker (line 4):** "MONDAY" highlighted + ↻ AGAIN
+**Time-jump card:** "260 MONDAYS LATER"
 
 **Belief in the loop:** "I'll start properly on Monday."
 
@@ -27,8 +40,6 @@
 4. I'll start properly on Monday.
 5. Better to start fresh than drag a bad week into it.
 6. Two hundred and sixty Mondays later. Still starting.
-
-**On-screen text:** "260 MONDAYS LATER" on the cut
 
 **Prop idea:** a wall calendar behind you with every Monday circled
 
@@ -41,6 +52,10 @@ Comment TODAY and I'll send you the 5-minute starter plan.
 
 ## 2. The "not a consistent person" loop
 
+**Top text:** "The sentence that keeps you stuck" (alt: "If you've ever called yourself 'all or nothing'")
+**Loop marker (line 4):** "NOT A CONSISTENT PERSON" highlighted + ↻ AGAIN
+**Time-jump card:** "5 YEARS LATER"
+
 **Belief in the loop:** "I'm just not a consistent person."
 
 **Script** (~18s)
@@ -51,8 +66,6 @@ Comment TODAY and I'll send you the 5-minute starter plan.
 5. I'll go again when I'm properly motivated. No point doing it half-hearted.
 6. Five years later. Same goals. Same January.
 
-**On-screen text:** "5 YEARS LATER" on the cut
-
 **Caption**
 "I'm not a consistent person" isn't who you are. It's a story you tell yourself after you miss a day.
 Consistent people miss days too. They just don't miss twice.
@@ -61,6 +74,10 @@ Comment LOOP if this one hit a bit close.
 ---
 
 ## 3. The "when things calm down" loop
+
+**Top text:** "Waiting for life to calm down?" (alt: "The 'right season' never comes")
+**Loop marker (line 4):** "WHEN THINGS CALM DOWN" highlighted + ↻ AGAIN
+**Time-jump card:** "5 YEARS LATER". Optionally, a second card for the last line: "STILL BUSY. STILL NOT STARTED."
 
 **Belief in the loop:** "Once things calm down, I'll get back into it."
 
@@ -71,8 +88,6 @@ Comment LOOP if this one hit a bit close.
 4. Once things calm down, I'll get back into it.
 5. You can't pour from an empty cup. I'll rest first.
 6. Five years later. Things never calmed down. I never started.
-
-**On-screen text:** "5 YEARS LATER" on the cut
 
 **Caption**
 Things don't calm down. You get better at doing it when they don't.
